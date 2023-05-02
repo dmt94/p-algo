@@ -11,10 +11,6 @@ class Car: # parent class
     def description(self):
         return f"I am a {self.color} car named {self.name}..."
 
-
-Tesla = Car("Tesla", "red")
-print(Tesla.run())
-
 # Inheritance
 # procedure, one class inherits the attributes and methods # of another class
 
@@ -25,7 +21,10 @@ class Bentley(Car):
     def description(self):
         return "I am a bentley!"
 
-my_bentley = Bentley("Baby B", "red", 55.2)
+my_audi = Audi("Foxy", "red", 22)
+my_bentley = Bentley("Baby B", "blue", 55.2)
+print(my_audi.description())
 print(my_bentley.description())
 
-
+# We have created two child classes, namely “Bentley” and 
+# “Audi,” who have inherited the methods and properties of # the parent class “Car.” 
